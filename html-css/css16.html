@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .cont{
+            width: 100%;
+            background-color: rgb(14,131,205);
+            padding: 50px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .btn{
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 75px;
+            border:3px solid white;
+            text-decoration: none;
+            color:white;
+            display: block;
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size:1.2em;
+            margin: 20px;
+        }
+        .btn1{
+            background-color:transparent ;
+            color: white;
+            transition: all 0.5s ease;
+        }
+        .btn1:hover{
+            background-color: white;
+            color: rgb(14,131,205);
+        }
+        .btn2{
+            background-color:white;
+            color: rgb(14,131,205);
+            border-radius: 10px;
+            transition: all 0.5s linear;
+        }
+        .btn2:hover{
+            background-color: transparent;
+            color:white;
+        }
+        .btn3{
+            transition: all 0.2s ease;
+        }
+        .btn3:hover{
+            box-shadow: 0px 0px 20px 0px black;
+        }
+        .btn4{
+            background-color: transparent;
+            
+        }
+        .btn4:hover{
+            color:rgb(14,131,205);
+            z-index: 1;
+        }
+        .btn4:before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height:100%;
+            left:0px;
+            top:0px;
+            background-color: white; 
+            transition: all 0.5s ease;
+        }
+        .btn4:hover:before{
+           width: 100%;
+           opacity: 0.5;
+            z-index: -1;
+        }
+        .btn5:after{
+            position: absolute;
+            content:">>";
+            font:20pt 'Courier New';
+            left:58%;
+            line-height: 1;
+            transition: all 0.2s ease;
+            opacity: 0;
+        }
+        .btn5:hover:after{
+            opacity: 1;
+            left:60%;
+        }
+        .btn6{
+            overflow: hidden;
+         
+        }
+        .btn6 span{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width: 100%;
+            height: 100%;
+            background-color:transparent;
+            padding: 25px;
+            box-sizing: border-box;
+            transition: all 0.5s ease;
+        }
+        .btn6:hover span{
+            left:125px;
+            opacity: 0;
+        }
+        .btn6:before{
+            position: absolute;
+            content: "Button6";
+            padding: 25px;
+            background-color:transparent;
+            width: 100%;
+            height: 100%;
+            top:-50px;
+            left:0px;
+            padding: 25px;
+            box-sizing: border-box;
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+        .btn6:hover:before{
+            top:0px;
+            opacity: 1;
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <a href="" class="btn btn1">
+            Button1
+        </a>
+        <a href="" class="btn btn2">
+            Button2
+        </a>
+        <a href="" class="btn btn3">
+            Button3
+        </a>
+        <a href="" class="btn btn4">
+            Button4
+        </a>
+        <a href="" class="btn btn5">
+            Next
+        </a>
+        <a href="" class="btn btn6">
+            <span>
+                &copy;
+            </span>
+        </a>
+        <div style="clear:both"></div>
+    </div>
+    
+</body>
+</html>

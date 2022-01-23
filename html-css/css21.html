@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+           
+        }
+        #con{
+            width: 60%;
+            height: auto;
+            position: relative;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 7px 0px gray;
+        }
+        #con h1{
+            background-color: #5C4837;
+            padding:10px 50px;
+            color: white;
+            font:1.4em Verdana;
+            margin:0px -50px;
+            box-shadow: 0px 2px 2px 0px black;
+        }
+        #con h1::before,h1::after{
+            content: "";
+            width: 0px;
+            height: 0px;
+            top:68px;
+            position: absolute;
+            border:50px solid #453629;
+            border-left:50px solid transparent;
+            border-right:50px solid transparent;
+            border-bottom:50px solid transparent;
+            z-index: -1;
+        }
+        
+        #con h1::before{
+            left:-30px;
+        }
+        #con h1::after{
+            right:-30px;
+        }
+    </style>
+</head>
+<body>
+   <div id="con">
+       <h1>igate solutions</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus dolore veniam aliquid sit, illum, aliquam amet obcaecati facere vitae aperiam. Dolore id numquam magnam fugit! Non, aliquid! Tenetur, quae?
+        Natus ut, consectetur asperiores consequatur fuga nulla amet! Optio error illo maxime, harum recusandae sunt tempora ratione doloremque velit dignissimos quia animi accusantium porro! Illo, quam minima! Officia, ducimus id.
+        Maxime iure, voluptas nulla, dolorem deserunt non ab sint sed ipsa maiores nostrum distinctio recusandae eaque, modi aut minus natus optio laboriosam perspiciatis. Debitis ullam ab nulla ipsam consectetur at.
+        </p>
+        
+   </div>
+</body>
+</html>

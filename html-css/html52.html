@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        #foot{
+            background-color: black;
+            padding: 50px;
+        }
+        footer{
+            width: 100%;
+            padding: 10px;
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            align-items: stretch;
+            color: blanchedalmond;
+        }
+        footer section{
+            padding: 10px 40px;
+            margin:10px;
+            flex-grow:0;
+            flex-shrink: 0;
+            flex-basis:20%;
+            color: white;
+        }
+        footer section h1{
+            font:1.2em Verdana;
+        }
+        footer section ul{
+            list-style: none;
+            margin-left:-40px;
+
+        }
+        footer section ul li{
+            margin-left:0px;
+        }
+        footer section ul a{
+            color:white;
+            text-decoration: none;
+            font:0.7em Verdana;
+        }
+        @media (max-width:680px){
+            footer section{
+                flex:0 0 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<section id="foot">
+    <footer>
+        <section>
+            <h1>Search Engines</h1>
+            <ul>
+                <li><a href="">Google</a></li>
+                <li><a href="">DuckDuck Go</a></li>
+                <li><a href="">Yahoo</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Web Tutorials</h1>
+            <ul>
+                <li><a href="">W3Schools</a></li>
+                <li><a href="">Tutorials Point</a></li>
+                <li><a href="">MSN</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Coding</h1>
+            <ul>
+                <li><a href="">codingfox.com</a></li>
+                <li><a href="">codepen.com</a></li>
+                <li><a href="">codingtoday.com</a></li>
+            </ul>
+        </section>
+    </footer>
+    <div style="color:white;text-align: center;">Cloud99 Labs &copy;2020 Rights reserved</div>
+</section>
+</body>
+</html>

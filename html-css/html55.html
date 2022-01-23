@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="shortcut icon" type="image/png" href="./images/fox.png"/>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        fieldset{
+            background-color: cadetblue;
+            border:none;
+            padding: 50px;
+            width:80%;
+            margin: 50px;
+            box-shadow:1px 1px 10px 0px black;
+        }
+        label{
+            display: inline-block;
+            width:150px;
+            margin: 10px;
+        }
+        [type=submit]{
+            margin: 10px auto;
+            width: 75px;
+            padding: 5px;
+        }
+        [type=text]{
+            border:none;
+            border-bottom: 1px solid gray;
+            width:150px;
+        }
+        fieldset h2{
+            font:1.2em Verdana;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+   <form action="./hello.php" method="GET">
+    <fieldset>
+        <h2>Employee Details</h2>
+        <label for="x">Empno</label>
+        <input type="text" name="txt1" id="x"><br>
+        <label for="y">Employee Name</label>
+        <input type="text" name="txt2" id="y"><br>
+        <label for="z">Salary</label>
+        <input type="text" name="txt3" id="z" value="1000"><br>
+        <div style="text-align: center;">
+        <input type="submit" value="Submit">
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>

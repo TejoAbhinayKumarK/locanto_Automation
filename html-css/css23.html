@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            
+        }
+        .con{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items:stretch;
+        }
+        .item{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin:10px;
+            flex-basis: 20%;
+        }
+        @media (max-width:1024px){
+            .item{
+                flex-basis: 40%;
+            }
+        }
+        @media (max-width:456px){
+            .item{
+                flex-basis: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio culpa unde exercitationem tempore architecto similique doloribus veritatis animi, numquam consequuntur corporis eaque voluptas cupiditate ratione est vitae ea sit aut?
+            Ducimus adipisci quaerat, voluptatum id, magni perspiciatis ab aliquam dolorum nisi quasi, fuga soluta. Vero ab rem culpa facere? Odit in possimus dolorem perspiciatis quasi maiores, iusto labore asperiores ipsa.
+            In optio ex cumque porro facere libero pariatur sint, beatae aliquam ratione dolorum eos hic, aliquid quisquam assumenda. Vitae neque ipsam commodi, rem voluptas laboriosam provident repudiandae enim. Earum, placeat.
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, mollitia atque laborum tempora animi maxime suscipit voluptates aliquam consectetur nesciunt ipsam corrupti minus dolore quos ratione sequi libero sint placeat.Iusto, quaerat soluta quibusdam at quam ab labore magnam aspernatur enim accusamus, architecto accusantium maiores veritatis omnis aliquam? Quos ipsa, quasi enim aut accusamus commodi sapiente voluptas similique vero asperiores?
+        </div>
+        <div class="item" style="flex-grow:2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore aliquid animi officia aliquam dolores fugiat provident fugit est qui? Voluptatem architecto ad quod iusto voluptas laudantium provident. Voluptas, dolore?
+            Sed fugiat ipsa et hic cupiditate doloremque laborum assumenda qui. Reprehenderit adipisci magni, enim doloribus earum dolorem numquam a minus aspernatur voluptatem sint quos nostrum est nemo consequuntur atque quia.
+            Dicta, officia quo. Voluptate aliquid et a? Sint ipsa esse totam similique cupiditate consectetur adipisci aperiam nemo! Consequuntur aut architecto aliquam, esse magni doloremque debitis magnam minima, laborum laboriosam asperiores!
+        </div>
+        
+    </div>
+</body>
+</html>

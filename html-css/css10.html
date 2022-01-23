@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .fixedsize{
+          width:800px;
+          margin:0px auto;
+          
+      }
+      #nav{
+          width: 100%;
+      }
+      #nav tr td{
+          text-align: center;
+          border-right: 1px solid gray;
+      }
+      #nav img{
+          width:35px;
+      }
+      #search{
+          border-radius: 10px;
+          border-style: none;
+          border:1px solid gray;
+          background-image: url("./images/magnifier.png");
+          background-repeat: no-repeat;
+          background-position: right;
+          padding: 2px;
+      }
+      .hero{
+          width: 100%;
+          position: relative;
+          top:20px;
+      }
+      .hero img{
+          width: 100%;
+          position: absolute;
+      }
+      .herotxt{
+          position: absolute;
+          color:white;
+          padding: 50px;
+          box-sizing: border-box;
+          top:15px;
+          left:45%;
+          font:1em Arial;
+      }
+    </style>
+</head>
+<body>
+    <div class="fixedsize">
+        <table id="nav">
+            <tr>
+                <td><img src="./images/bbc.jpg" alt=""></td>
+                <td>News</td>
+                <td>Support</td>
+                <td>Weather</td>
+                <td>Earth</td>
+                <td>Future</td>
+                <td>Shope</td>
+                <td>TV</td>
+                <td>Radio</td>
+                <td>More</td>
+                <td style="border-right: none;"><input type="text" id="search" placeholder="Search"></td>
+            </tr>
+        </table>
+        <div class="hero">
+            <img src="./images/stev.jpg" alt="">
+            <div class="herotxt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt exercitationem distinctio veritatis non consequatur cumque rem voluptatum similique hic, explicabo assumenda, delectus, maiores autem possimus veniam error voluptas tempora eligendi.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
